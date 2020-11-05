@@ -37,3 +37,7 @@ spec:
           httpGet:
             path: /
             port: http
+      volumes:
+      - name: eks-example
+        secret:
+          secretName: db-creds
